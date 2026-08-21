@@ -13,6 +13,31 @@
             key-positions = <28 29>;
             layers = <2>;
         };
+
+        left_Click {
+            bindings = <&mkp LCLK>;
+            key-positions = <19 20>;
+        };
+
+        right_Click {
+            bindings = <&mkp RCLK>;
+            key-positions = <20 21>;
+        };
+
+        middle_Click {
+            bindings = <&mkp MCLK>;
+            key-positions = <19 20 21>;
+        };
+
+        next_Click {
+            bindings = <&mkp MB5>;
+            key-positions = <33 34>;
+        };
+
+        prev_Click {
+            bindings = <&mkp MB4>;
+            key-positions = <34 35>;
+        };
     };
 
     keymap {
@@ -29,10 +54,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &mkp LCLK  &mo 4             &mkp RCLK  &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp RG(LEFT_BRACKET)  &mkp MB1   &mkp MB3          &mkp MB2   &kp RG(RIGHT_BRACKET)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &kp LC(UP_ARROW)  &trans     &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans            &trans     &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
